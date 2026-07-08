@@ -104,11 +104,11 @@ locals {
 		name = google_compute_network.Private2VpcNetwork.name
 		self_link =google_compute_network.Private2VpcNetwork.self_link
 	}
-	output "PublicSubnet" {
+	PublicSubnet {
 		name = google_compute_subnetwork.PublicSubnet.name
 		self_link = google_compute_subnetwork.PublicSubnet.self_link
 	}
-	PublicVpcNetwork" {
+	PublicVpcNetwork {
 		id = google_compute_network.PublicVpcNetwork.id
 		mtu = google_compute_network.PublicVpcNetwork.mtu
 		name = google_compute_network.PublicVpcNetwork.name

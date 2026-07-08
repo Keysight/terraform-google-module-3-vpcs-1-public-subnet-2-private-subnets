@@ -34,7 +34,7 @@ output "PublicSubnet" {
 	value = local.PublicSubnet
 }
 
-output PublicSubnetName {
+output "PublicSubnetName" {
 	value = local.PublicSubnet.name
 }
 
