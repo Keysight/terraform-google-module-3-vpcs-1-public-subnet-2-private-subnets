@@ -1,47 +1,47 @@
 output "Private1Subnet" {
-	value = {
-		"name" : google_compute_subnetwork.Private1Subnet.name
-		"self_link" : google_compute_subnetwork.Private1Subnet.self_link
-	}
+	value = local.Private1Subnet
+}
+
+output "Private1SubnetName" {
+	value = local.Private1Subnet.name
 }
 
 output "Private1VpcNetwork" {
-	value = {
-		"id" : google_compute_network.Private1VpcNetwork.id
-		"mtu" : google_compute_network.Private1VpcNetwork.mtu
-		"name" : google_compute_network.Private1VpcNetwork.name
-		"self_link" : google_compute_network.Private1VpcNetwork.self_link
-	}
+	value = local.PrivateVpc1Network
+}
+
+output "Private1VpcNetworkName" {
+	value = local.Private1VpcNetwork.name
 }
 
 output "Private2Subnet" {
-	value = {
-		"name" : google_compute_subnetwork.Private2Subnet.name
-		"self_link" : google_compute_subnetwork.Private2Subnet.self_link
-	}
+	value = local.Private2Subnet
+}
+
+output "Private2SubnetName" {
+	value = local.Private2Subnet.name
 }
 
 output "Private2VpcNetwork" {
-	value = {
-		"id" : google_compute_network.Private2VpcNetwork.id
-		"mtu" : google_compute_network.Private2VpcNetwork.mtu
-		"name" : google_compute_network.Private2VpcNetwork.name
-		"self_link" : google_compute_network.Private2VpcNetwork.self_link
-	}
+	value = local.PrivateVpc2Network
+}
+
+output "Private2VpcNetworkName" {
+	value = local.Private2VpcNetwork.name
 }
 
 output "PublicSubnet" {
-	value = {
-		"name" : google_compute_subnetwork.PublicSubnet.name
-		"self_link" : google_compute_subnetwork.PublicSubnet.self_link
-	}
+	value = local.PublicSubnet
+}
+
+output PublicSubnetName {
+	value = local.PublicSubnet.name
 }
 
 output "PublicVpcNetwork" {
-	value = {
-		"id" : google_compute_network.PublicVpcNetwork.id
-		"mtu" : google_compute_network.PublicVpcNetwork.mtu
-		"name" : google_compute_network.PublicVpcNetwork.name
-		"self_link" : google_compute_network.PublicVpcNetwork.self_link
-	}
+	value = local.PublicVpcNetwork
+}
+
+output "PublicVpcNetworkName" {
+	value = local.PublicVpcNetwork.name
 }
