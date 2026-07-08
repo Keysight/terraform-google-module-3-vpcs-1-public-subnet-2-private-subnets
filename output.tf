@@ -7,7 +7,7 @@ output "Private1SubnetName" {
 }
 
 output "Private1VpcNetwork" {
-	value = local.PrivateVpc1Network
+	value = local.Private1VpcNetwork
 }
 
 output "Private1VpcNetworkName" {
@@ -23,7 +23,7 @@ output "Private2SubnetName" {
 }
 
 output "Private2VpcNetwork" {
-	value = local.PrivateVpc2Network
+	value = local.Private2VpcNetwork
 }
 
 output "Private2VpcNetworkName" {
