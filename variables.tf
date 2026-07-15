@@ -4,6 +4,12 @@ variable "InstanceId" {
 	type = string
 }
 
+variable "InstanceName" {
+	default = null
+	description = "Custom instance name used to override the default automatically generated name"
+	type = string
+}
+
 variable "Private1VpcNetworkMtu" {
 	default = 1460
 	description = "Maxium Transmission Unit associated with the first private vpc network"
